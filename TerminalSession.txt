@@ -1,1 +1,26 @@
-
+@75nuj ➜ /workspaces/cli-basics-75nuj (main) $ pwd
+/workspaces/cli-basics-75nuj
+@75nuj ➜ /workspaces/cli-basics-75nuj (main) $ mkdir CLIBasicsFolder
+@75nuj ➜ /workspaces/cli-basics-75nuj (main) $ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj (main) $ cd CLIBasicsFolder
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main) $ touch myfile.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ ls
+myfile.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ echo anujan ics4u1 >> myfile.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ cat myfile.txt
+anujan ics4u1
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ cp myfile.txt myfile_copy.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ ls
+myfile_copy.txt  myfile.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ mv myfile_copy.txt myfile2.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ ls
+myfile2.txt  myfile.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ mv myfile2.txt ../myfile2.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ ls ..
+CLIBasicsFolder  myfile2.txt  README.md  TerminalSession.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj/CLIBasicsFolder (main ✗) $ cd ..
+@75nuj ➜ /workspaces/cli-basics-75nuj (main ✗) $ rm ./CLIBasicsFolder/myfile.txt
+@75nuj ➜ /workspaces/cli-basics-75nuj (main ✗) $ rm -r CLIBasicsFolder
+@75nuj ➜ /workspaces/cli-basics-75nuj (main ✗) $ ls
+myfile2.txt  README.md  TerminalSession.txt
